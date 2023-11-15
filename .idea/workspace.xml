@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a588bb-9c52-45fa-ac6f-e6d4bba22170" name="更改" comment="" />
+    <list default="true" id="50a588bb-9c52-45fa-ac6f-e6d4bba22170" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gate_way.sql" beforeDir="false" afterPath="$PROJECT_DIR$/gate_way.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reverse_proxy/tcp_reverse_proxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_proxy_middleware/tcp_black_list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_proxy_middleware/tcp_flow_count.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_proxy_middleware/tcp_flow_limit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_proxy_middleware/tcp_slice_router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_proxy_middleware/tcp_white_list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_proxy_router/tcpserver.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_server/tcp_conn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_server/tcp_server.go" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

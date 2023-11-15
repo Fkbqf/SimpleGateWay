@@ -118,24 +118,6 @@ INSERT INTO `gateway_service_access_control` (`id`, `service_id`, `open_auth`, `
 -- --------------------------------------------------------
 
 --
--- 表的结构 `gateway_service_grpc_rule`
---
-
-CREATE TABLE `gateway_service_grpc_rule` (
-                                             `id` bigint(20) NOT NULL COMMENT '自增主键',
-                                             `service_id` bigint(20) NOT NULL DEFAULT '0' COMMENT '服务id',
-                                             `port` int(5) NOT NULL DEFAULT '0' COMMENT '端口',
-                                             `header_transfor` varchar(5000) NOT NULL DEFAULT '' COMMENT 'header转换支持增加(add)、删除(del)、修改(edit) 格式: add headname headvalue 多个逗号间隔'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='网关路由匹配表';
-
---
--- 转存表中的数据 `gateway_service_grpc_rule`
---
-
-INSERT INTO `gateway_service_grpc_rule` (`id`, `service_id`, `port`, `header_transfor`) VALUES
-                                                                                            (171, 53, 8009, ''),
-                                                                                            (172, 54, 8002, 'add metadata1 datavalue,edit metadata2 datavalue2'),
-                                                                                            (173, 58, 8012, 'add meta_name meta_value');
 
 -- --------------------------------------------------------
 

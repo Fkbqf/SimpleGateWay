@@ -5,7 +5,6 @@ import (
 	"FGateWay/golang_common/lib"
 	"FGateWay/http_proxy_router"
 	"FGateWay/router"
-	"FGateWay/tcp_proxy_router"
 	"flag"
 	"os"
 	"os/signal"
@@ -50,14 +49,11 @@ func main() {
 		go func() {
 			http_proxy_router.HttpsServerRun()
 		}()
-		go func() {
-			tcp_proxy_router.TcpServerRun()
-		}()
+
 		quit := make(chan os.Signal)
 		signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 		<-quit
 
-		tcp_proxy_router.TcpServerStop()
 		http_proxy_router.HttpServerStop()
 		http_proxy_router.HttpsServerStop()
 

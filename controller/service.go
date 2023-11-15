@@ -24,10 +24,6 @@ func ServiceRegister(group *gin.RouterGroup) {
 	group.POST("/Service_add_http", ServController.ServiceAddHttp)
 	group.POST("/Service_update_http", ServController.ServiceUpdateHttp)
 
-	group.POST("/service_add_tcp", ServController.ServiceAddTcp)
-	group.POST("/service_update_tcp", ServController.ServiceUpdateTcp)
-	group.POST("/service_add_grpc", ServController.ServiceAddGrpc)
-	group.POST("/service_update_grpc", ServController.ServiceUpdateGrpc)
 }
 
 // ServiceList godoc
